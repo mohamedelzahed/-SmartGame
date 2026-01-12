@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>لعبة التحويل الذكي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>لعبة التحويل الذكي</h1>
+    <h2>نظام الوحدات الدولية (SI)</h2>
+
+    <div class="status-bar">
+      <div>المستوى: <span id="level">1</span></div>
+      <div>النقاط: <span id="score">0</span></div>
+      <div>المحاولات الصحيحة: <span id="correctCount">0</span> / <span id="targetCorrect">5</span></div>
+      <div id="timerBox" class="hidden">الوقت: <span id="timeLeft">30</span> ثانية</div>
+    </div>
+
+    <div id="questionBox" class="question-box">
+      <!-- يتم ملء السؤال ديناميكياً من JavaScript -->
+    </div>
+
+    <div id="feedback" class="feedback"></div>
+
+    <button id="nextBtn" class="btn" disabled>السؤال التالي</button>
+    <button id="endBtn" class="btn">إنهاء الاختبار</button>
+    <button id="restartBtn" class="btn">إعادة بدء الاختبار</button>
+
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
